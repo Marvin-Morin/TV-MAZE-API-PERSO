@@ -1,0 +1,81 @@
+/* Toute ma section casting :  */
+.sectioncasting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: max-content;
+    background-color: #eb4ceb;
+    padding: 20px 80px;
+}
+
+/* Mon Titre  */
+.sectioncasting h5 {
+    margin: 10vh auto 5vh 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+.listeacteur {
+    gap: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.unActeur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.unActeur img {
+    object-fit: contain;
+    height: 100%;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Nom de l'acteur  */
+.nameActeur {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.birthdayActeur {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 580px) {
+
+    .listeacteur {
+        gap: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .unActeur {
+        width: 90vw;
+    }
+
+    /*****  SECTION CASTING ******/
+
+
+    .sectioncasting h5 {
+        margin: 10px auto !important;
+    }
+}

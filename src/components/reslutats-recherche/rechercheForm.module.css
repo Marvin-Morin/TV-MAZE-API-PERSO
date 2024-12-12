@@ -1,0 +1,51 @@
+.result {
+    min-height: 100vh;
+    max-height: max-content;
+    background-color: #33b0cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.resultsearch {
+    overflow: hidden;
+    flex-direction: column;
+    max-width: 90vw;
+    min-width: 90vw;
+    background-color: #fff;
+    margin: 10px auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: 30vh;
+    min-height: 30vh;
+}
+
+.resultsearch img {
+    object-fit: contain;
+    min-height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.resultsearch span {
+    height: 50vh;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    overflow-y: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 60%;
+}
+
+.resultsearch p {
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 0.8em;
+}
