@@ -63,6 +63,11 @@ section.season {
     justify-content: flex-start;
     height: 40vh;
     background-color: #000;
+
+}
+
+p {
+    margin-right: 10px;
 }
 
 .no_found {

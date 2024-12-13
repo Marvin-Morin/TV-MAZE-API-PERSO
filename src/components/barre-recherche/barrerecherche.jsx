@@ -38,7 +38,7 @@ export const BarreDeRecherche = () => {
 
     e.preventDefault();
 
-    fetch(`http://api.tvmaze.com/search/shows?q=${valeur}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${valeur}`)
       .then((response) => response.json())
       .then((data) => navigation("/series-recherchées", { state: { result: data } }))
       .catch((error) => console.log(error)),

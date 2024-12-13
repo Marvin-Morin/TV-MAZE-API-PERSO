@@ -52,7 +52,7 @@ export const SerieCliquer = () => {
   useEffect(() => {
     console.log(state);
     fetch(
-      `http://api.tvmaze.com/shows/${state.data.id}?embed[]=cast&embed[]=seasons`)
+      `https://api.tvmaze.com/shows/${state.data.id}?embed[]=cast&embed[]=seasons`)
       .then((result) => result.json())
       .then((data) => {
         console.log(data);

@@ -35,14 +35,13 @@ export const Home = () => {
     const [currentImage, setCurrentImage] = useState(0);
 
 
-
     //Pour afficher les 10 dernières séries sur la page d'accueil et les stocker ici
     const [serie, setSeries] = useState([]);
 
     useEffect(() => {
-        fetch(`http://api.tvmaze.com/shows`)
+        fetch(`https://api.tvmaze.com/shows`)
             .then(response => response.json())
-            .then(data => {
+            .then(data => {                
                 // Je crée ici une variable pour stocker uniquement les 10 derniers résultats de tout les résultats de l'API
                 const latestShows = data.slice(-10);
                 // Que j'ajoute ensuite à l'endroit où je stock les datas de mon fetch (donc il me restera que les 10 dernières affiches de l'API)
